@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5269d9"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Lamis Games">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css"><title>Lamis Brain Games</title>
+</head>
+<body>
+<header><div class="brand"><div class="logo">✦</div><div><b>LAMIS</b><small>BRAIN GAMES</small></div></div><div class="score">🏆 <span id="score">0</span> pts</div></header>
+<main>
+<section id="home" class="screen">
+<div class="hero"><span class="eyebrow">YOUR BRAIN PLAYGROUND</span><h1>Ready to challenge yourself?</h1><p>A little thinking every day makes a great habit.</p><button id="daily">Start daily challenge →</button></div>
+<h2>Choose your game</h2><div class="games">
+<button class="game" data-game="brain"><span class="gameicon purple">🧠</span><b>Brain Teasers</b><small>Logic, numbers & riddles</small></button>
+<button class="game" data-game="sudoku"><span class="gameicon green">▦</span><b>Sudoku</b><small>Classic number puzzles</small></button>
+<button class="game" data-game="jigsaw"><span class="gameicon orange">🧩</span><b>Jigsaw Sudoku</b><small>Irregular number grids</small></button>
+<button class="game" data-game="maze"><span class="gameicon pink">⌁</span><b>Mazes</b><small>Find your way out</small></button>
+<button class="game" data-game="memory"><span class="gameicon blue">◈</span><b>Memory Match</b><small>Train your memory</small></button>
+</div>
+<div class="progress"><b>Your progress</b><div class="progressrow"><span>Puzzles completed</span><strong id="completed">0</strong></div><div class="bar"><i id="bar"></i></div><small>Progress is saved on this device.</small></div>
+</section>
+<section id="play" class="screen hidden">
+<button class="back" id="back">← Home</button><div class="playcard">
+<div class="playtop"><span class="eyebrow" id="gameLabel">DAILY CHALLENGE</span><span class="pill" id="difficultyLabel">Mixed</span></div>
+<h1 id="gameTitle">The Missing Number</h1><p id="gameDesc">Find the mathematical pattern.</p>
+<div id="gameArea"></div>
+<div class="actions"><button class="secondary" id="hint">💡 Hint</button><button class="secondary" id="reset">↻ Reset</button></div>
+<p id="feedback" class="feedback" aria-live="polite"></p>
+</div>
+</section>
+</main>
+<footer> LAMIS BRAIN GAMES <span>•</span> VERSION 1.0</footer>
+<script src="app.js"></script>
+</body></html>
